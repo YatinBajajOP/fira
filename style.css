@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: monospace;
+}
+
+:root{
+    --clr-background: #016193;
+    --clr-red: #b62c27;
+    --clr-white: #EEE;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-white);
+}
+
+div#heading{
+    border: 1px solid black;
+    padding: 0 0 0 10px;
+    background-color: var(--clr-background);
+}
+
+#heading img {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+}
+
+#add_task{
+    margin: 10px 10px 10px 0;
+    align-self: flex-end;
+    width: fit-content;
+    background-color: var(--clr-background);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#tasks,
+#completed_tasks{
+    padding: 10px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    gap: 30px;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.task .inputs{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.task input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: var(--clr-white);
+}
+
+.task .edit{
+    flex: 1;
+}
+
+.task .description{
+    flex: 2;
+}
+
+.task .date{
+    width: fit-content;
+    border: none;
+}
+
+.task .btns {
+    display: flex;
+    gap: 10px;
+    cursor: pointer
+}
+
+.task .btns * {
+    width: 35px;
+    height: 35px;
+    color: black;
+    transition: all 0.2s linear;
+    transform-origin: center end;
+}
+
+.task .btns *:hover{
+    translate: 0 -3px;
+    scale: 1.1
+}
+
+h2{
+    margin-left: 10px;
+}
