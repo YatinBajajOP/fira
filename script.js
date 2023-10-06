@@ -1,4 +1,4 @@
-const HOST_URL = 'http://127.0.0.1:5500'
+const HOST_URL = 'http://13.127.83.140'
 
 task = `
         <div class='inputs'>
